@@ -30,10 +30,12 @@ class MainActivity : ComponentActivity() {
             count++
             if(flag == 0){
                 btnCurrent.text = "X"
+                btnCurrent.setBackgroundColor(getResources().getColor(R.color.purple_200))
                 flag = 1
                 findViewById<TextView>(R.id.tvTurn).text = "Turn O"
             }else{
-                btnCurrent.text = "o"
+                btnCurrent.text = "O"
+                btnCurrent.setBackgroundColor(getResources().getColor(R.color.teal_200))
                 flag = 0
                 findViewById<TextView>(R.id.tvTurn).text = "Turn X"
             }
@@ -92,6 +94,15 @@ class MainActivity : ComponentActivity() {
         findViewById<Button>(R.id.btn7).text = ""
         findViewById<Button>(R.id.btn8).text = ""
         findViewById<Button>(R.id.btn9).text = ""
+        findViewById<Button>(R.id.btn1).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn2).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn3).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn4).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn5).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn6).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn7).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn8).setBackgroundColor(getResources().getColor(R.color.white))
+        findViewById<Button>(R.id.btn9).setBackgroundColor(getResources().getColor(R.color.white))
         flag = 0
         count = 0
     }
